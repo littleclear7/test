@@ -76,6 +76,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/root/CLionProjects/test/jemalloc-tcmalloc-malloc.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/test/jemalloc-tcmalloc-malloc.h">
+			<Option target="test"/>
+		</Unit>
 		<Unit filename="/root/CLionProjects/test/main.c">
 			<Option target="test"/>
 		</Unit>

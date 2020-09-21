@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/test.dir/main.c.o CMakeFiles/test.dir/socket_util.c.o CMakeFiles/test.dir/redis_util.c.o CMakeFiles/test.dir/mmalloc.c.o  -o test   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib -lhiredis -lpthread -ljemalloc 
+/usr/bin/cc -g   CMakeFiles/test.dir/main.c.o CMakeFiles/test.dir/socket_util.c.o CMakeFiles/test.dir/redis_util.c.o CMakeFiles/test.dir/mmalloc.c.o CMakeFiles/test.dir/jemalloc-tcmalloc-malloc.c.o  -o test   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib -lhiredis -lpthread -ljemalloc 

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test.dir/jemalloc-tcmalloc-malloc.c.o"
   "CMakeFiles/test.dir/main.c.o"
   "CMakeFiles/test.dir/mmalloc.c.o"
   "CMakeFiles/test.dir/redis_util.c.o"

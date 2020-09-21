@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/root/CLionProjects/test/jemalloc-tcmalloc-malloc.c" "/root/CLionProjects/test/cmake-build-debug/CMakeFiles/test.dir/jemalloc-tcmalloc-malloc.c.o"
   "/root/CLionProjects/test/main.c" "/root/CLionProjects/test/cmake-build-debug/CMakeFiles/test.dir/main.c.o"
   "/root/CLionProjects/test/mmalloc.c" "/root/CLionProjects/test/cmake-build-debug/CMakeFiles/test.dir/mmalloc.c.o"
   "/root/CLionProjects/test/redis_util.c" "/root/CLionProjects/test/cmake-build-debug/CMakeFiles/test.dir/redis_util.c.o"

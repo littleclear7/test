@@ -123,6 +123,33 @@ test/fast:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+jemalloc-tcmalloc-malloc.o: jemalloc-tcmalloc-malloc.c.o
+
+.PHONY : jemalloc-tcmalloc-malloc.o
+
+# target to build an object file
+jemalloc-tcmalloc-malloc.c.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/jemalloc-tcmalloc-malloc.c.o
+.PHONY : jemalloc-tcmalloc-malloc.c.o
+
+jemalloc-tcmalloc-malloc.i: jemalloc-tcmalloc-malloc.c.i
+
+.PHONY : jemalloc-tcmalloc-malloc.i
+
+# target to preprocess a source file
+jemalloc-tcmalloc-malloc.c.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/jemalloc-tcmalloc-malloc.c.i
+.PHONY : jemalloc-tcmalloc-malloc.c.i
+
+jemalloc-tcmalloc-malloc.s: jemalloc-tcmalloc-malloc.c.s
+
+.PHONY : jemalloc-tcmalloc-malloc.s
+
+# target to generate assembly for a file
+jemalloc-tcmalloc-malloc.c.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/jemalloc-tcmalloc-malloc.c.s
+.PHONY : jemalloc-tcmalloc-malloc.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... jemalloc-tcmalloc-malloc.o"
+	@echo "... jemalloc-tcmalloc-malloc.i"
+	@echo "... jemalloc-tcmalloc-malloc.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -14,30 +14,30 @@
 
 pthread_barrier_t barrier;
 
-void test(int num){
-    for (int i = 0; i <num ; ++i) {
-        unsigned char *p = malloc(1000);
-        p = calloc(500, 4);
-        free(p);
-    }
-    pthread_barrier_wait(&barrier);
-}
-
-int main(int argc, char **argv) {
-    pthread_barrier_init(&barrier, NULL, testThread + 1);
-    struct timeval start,end;
-    gettimeofday(&start, NULL );
-    for (int i = 0; i < testThread; ++i) {
-        pthread_t pid;
-        pthread_create(&pid, NULL, &test, testTimes);
-        pthread_detach(pid);
-    }
-    pthread_barrier_wait(&barrier);
-
-    gettimeofday(&end, NULL );
-    double timeuse = ( end.tv_sec - start.tv_sec ) + (end.tv_usec - start.tv_usec)/1000000.0;
-    printf("time=%f\n",timeuse);
-    pthread_barrier_destroy(&barrier);
-    return 0;
-}
+//void test(int num){
+//    for (int i = 0; i <num ; ++i) {
+//        unsigned char *p = malloc(1000);
+//        p = calloc(500, 4);
+//        free(p);
+//    }
+//    pthread_barrier_wait(&barrier);
+//}
+//
+//int main(int argc, char **argv) {
+//    pthread_barrier_init(&barrier, NULL, testThread + 1);
+//    struct timeval start,end;
+//    gettimeofday(&start, NULL );
+//    for (int i = 0; i < testThread; ++i) {
+//        pthread_t pid;
+//        pthread_create(&pid, NULL, &test, testTimes);
+//        pthread_detach(pid);
+//    }
+//    pthread_barrier_wait(&barrier);
+//
+//    gettimeofday(&end, NULL );
+//    double timeuse = ( end.tv_sec - start.tv_sec ) + (end.tv_usec - start.tv_usec)/1000000.0;
+//    printf("time=%f\n",timeuse);
+//    pthread_barrier_destroy(&barrier);
+//    return 0;
+//}
 
