@@ -10,4 +10,4 @@ link_libraries(hiredis  pthread )
 
 link_libraries(jemalloc)
 #link_libraries(tcmalloc)
-add_executable(test main.c socket_util.c socket_util.h redis_util.c redis_util.h mmalloc.c mmalloc.h jemalloc-tcmalloc-malloc.c jemalloc-tcmalloc-malloc.h)
+add_executable(test main.c socket_util.c socket_util.h redis_util.c redis_util.h mmalloc.c mmalloc.h jemalloc-tcmalloc-malloc.c jemalloc-tcmalloc-malloc.h thpool.c thpool.h)
